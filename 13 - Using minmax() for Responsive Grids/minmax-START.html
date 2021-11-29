@@ -21,9 +21,26 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+      /*    grid-template-columns: repeat(auto-fill, 100px);*/
+      /*   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+      /*    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+      /*  more likely going to use auto-fit because we won't necessarily will want that extra space */
+      grid-template-columns: fit-content(100px) 150px 150px 150px;
     }
   </style>
 </body>
+<!-- Notes: auto-fill/auto-fit used with minmax replaces some media queries because it is responsive by nature
+
+-> WHEN CONTENT SPILLS!? We don't want to have to figure out how big out content is going to be...
+WE replace that with a MINMAX
+
+MINMAX: 2 values, min and max that the track will be, 1FR as a ,ax so that it will be the ENTIRE WIDTH of the GRID
+
+FIT-CONTENT vs auto:
+sometimes auto takes up too much space so we can replace it with fit-content
+USE "()" to clamp value 
+May not use it a lot but my be used for your sizing needs
+
+-->
 
 </html>

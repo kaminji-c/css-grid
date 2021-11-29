@@ -12,7 +12,7 @@
   <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
-    <div class="item">3</div>
+    <div class="item">Wes Bos Is Cool</div>
     <div class="item">4</div>
     <div class="item">5</div>
     <div class="item">6</div>
@@ -30,9 +30,29 @@
   <style>
     .container {
       display: grid;
+      height: 600px;
+      /*height in relation to row size */
       grid-gap: 20px;
+      border: 10px solid var(--yellow);
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+      grid-template-columns: auto 1fr auto 1fr;
+      /*auto will adjust to the MAX size of the CONTENT that is the DEFINING the WIDTH of the CONTENT*/
+      grid-template-rows: 1fr 1fr 1fr 1fr;
     }
   </style>
+  <!-- Notes:
+  Using PERCENTAGES, is tricky because 25% x 4 does not equal to 100%, it is not including grid-gap/the px in between the columns
+  Use percentages wisely, quarter, thirds, halves, but not to add up to 100% = headaches
+
+  vs.
+  
+  FR unit/fractional unit: amount of space left after all the elements are laid out
+  -> lays out all explicit elements, then FR unit| FREE SPACE -> in portion of space left
+
+  also 
+  
+  REMS
+ -->
 </body>
 
 </html>

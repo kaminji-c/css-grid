@@ -14,13 +14,33 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
   </div>
 
   <style>
     .container {
       display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 200px 400px;
+      grid-template-rows: 50px 100px;
+      grid-auto-rows: 100px 500px;
+      /*implicitly created rows, can pass multiple values*/
+      grid-auto-columns: 100px;
     }
   </style>
 </body>
+<!-- Notes
+-> Rows/Columns not defined are called implicit, browser implicitly creates them
+-> Rows/Columns explicity defined are called explicit 
+-> SOLID LINES is where the explicit grid ends
+-> HOW TO SIZE IMPLICIT GRID ITEMS???
+GRID ROWS//
+grid-auto-rows: define how big the rows are when added
+GRID COLUMNS// using grid-auto-flow -> instead of giving automatic rows, gives automatic columns
+ grid-auto-columns:
+-->
 
 </html>

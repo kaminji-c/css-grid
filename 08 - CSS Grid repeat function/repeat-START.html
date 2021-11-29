@@ -12,7 +12,7 @@
   <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
-    <div class="item">3</div>
+    <div class="item">the number 3 is a good number</div>
     <div class="item">4</div>
     <div class="item">5</div>
     <div class="item">6</div>
@@ -31,8 +31,14 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: 100px repeat(2, 1fr auto) 200px;
     }
   </style>
 </body>
+<!-- notes:
+repeat function alternates values
+you can place explicit widths before and after a repeat function
+can also use AUTO in a repeat function, AUTO sizes based on it's content
+ -->
 
 </html>

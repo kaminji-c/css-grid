@@ -12,14 +12,27 @@
   <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: 400px 200px;
+      grid-auto-flow: column;
+      /*  grid-auto-flow: row; default */
+      grid-auto-columns: 200px;
     }
   </style>
 </body>
+<!-- Notes
+  GRID AUTO FLOW//
+  -> Not something used all the time because it determines if the new elements added with be added
+  as ROWS or as COLUMNS
+  -> Useful for horizontal scrolling elements
+  -> grid-auto-columns: any columns that have been implicitly created is defined by this rule
+ -->
 
 </html>

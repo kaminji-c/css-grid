@@ -9,7 +9,34 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
 
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 1fr;
+      grid-template-rows: 200px 100px 1fr;
+      grid-gap: 20px;
+    }
+  </style>
 </body>
+
+<!-- Notes: 
+ -> display grid, slice and dice them into [rows and columns/collectively called tracks]
+ -> grid items are grid items without having to define it
+ -> grid-gap used to space grid items apart 
+ -> implicit grid: sizes itself when not defined...
+-->
 
 </html>

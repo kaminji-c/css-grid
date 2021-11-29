@@ -18,7 +18,7 @@
     <div class="item item6">6</div>
     <div class="item item7">7</div>
     <div class="item item8">8</div>
-    <div class="item item8">💩</div>
+    <div class="item poop">💩</div>
     <div class="item item9">9</div>
     <div class="item item10">10</div>
     <div class="item item11">11</div>
@@ -48,6 +48,27 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    .poop {
+      /*grid-column: span 2; implicitly telling it where to start then end */
+      background: #BADA55;
+      /*  grid-column-start: 2;
+      grid-column-end: 5; 
+      -> shorthand is using grid-column with the forward slash( / ), 
+      -> can also use span with this shorthand property*/
+      /*grid-column: 2 / 5; start and end */
+      /*grid-column: span 2 / 5; span width, end at */
+      /*grid-column: 2 / span 5; start at, span width */
+      /* grid-column: 1 / -1; */
+      grid-column: span 2;
+      /* span entire track, if you don't know how many tracks there is, use -1 */
+      grid-row: 1 / -1;
+
+      /*Takes up the entire EXPLICIT GRID
+       grid-column: 1 / -1;
+      grid-row: 1 / -1; */
     }
   </style>
 </body>

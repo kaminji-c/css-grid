@@ -10,15 +10,59 @@
 
 <body>
   <div class="container">
-
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+    <div class="item item13">13</div>
+    <div class="item item14">14</div>
+    <div class="item item15">15</div>
+    <div class="item item16">16</div>
+    <div class="item item17">17</div>
+    <div class="item item18">18</div>
+    <div class="item item19">19</div>
+    <div class="item item20">20</div>
+    <div class="item item21">21</div>
+    <div class="item item22">22</div>
+    <div class="item item23">23</div>
+    <div class="item item24">24</div>
+    <div class="item item25">25</div>
+    <div class="item item26">26</div>
+    <div class="item item27">27</div>
+    <div class="item item28">28</div>
+    <div class="item item29">29</div>
+    <div class="item item30">30</div>
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item9 {
+      background: mistyrose;
+      grid-column: span 2;
+      grid-row: span 2;
+      /* width: 500px; */
     }
   </style>
 </body>
+<!-- notes: 
+  -> Rather than relying on the CONTENT WIDTH or the FIXED WIDTH of an ITEM we use SPANNING
+  SPANNING: lets us to explicity define an item to be a specific width
+  - If item spans more than the available free space in a ROW than it will start on the next line
+  - If item spans more than available free space in a COLUMN the browser will force the grid to be larger and create IMPLICIT columns
+  DENSE: allows you to fill in empty spaces
+ -->
 
 </html>
