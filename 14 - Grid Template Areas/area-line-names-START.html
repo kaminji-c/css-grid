@@ -46,8 +46,23 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+        "💩 💩 💩 💩 🍔 🍔 🍔 🍔"
+    }
+
+    .item3 {
+      grid-column: 💩-start / 💩-end;
+      grid-column: 💩-start / 🍔-end;
+      grid-row-end: 💩-end;
     }
   </style>
 </body>
+<!-- notes:
+-> When you create grid areas you get LINE NAMES
+Can tack on "-start" or "-end" into the grid areas that are defined with the grid-template-area
+ -->
 
 </html>
