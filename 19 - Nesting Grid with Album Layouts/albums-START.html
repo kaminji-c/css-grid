@@ -108,13 +108,31 @@
   <style>
     .albums {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
 
+    .album {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      color: #fff;
+      font-weight: 100;
+    }
+
+    .album__artwork {
+      /*forces the browser to spans entire width of it's column not the native width of the image which is 150px of the container*/
+      width: 100%;
     }
   </style>
 </body>
 <!-- Notes:
 How to nest grid inside another grid
+GRID ITEM can also be a GRID CONTAINER at the same time
  -->
 
 </html>
