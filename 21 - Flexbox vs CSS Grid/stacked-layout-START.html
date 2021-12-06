@@ -19,7 +19,11 @@
   </div>
 
   <style>
-    .stacked {}
+    .stacked {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
 
     .stacked>* {
       width: 30%;
@@ -27,5 +31,10 @@
     }
   </style>
 </body>
+<!-- NOTES
+Only doable in FLEXBOX
+CONS of GRID: Columns are RIGID, can't have rows that are different sizes
+CONS of FLEX: No concept of flex gap or gap at all, hopefully that will change because using MARGIN on FLEX ITEMS is not ideal -> it leads to unintended margin on right and left, and then you have to use negative margins
+-->
 
 </html>
